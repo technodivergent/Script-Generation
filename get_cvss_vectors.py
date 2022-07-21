@@ -21,7 +21,7 @@ def get_json(cve_id: str) -> json:
     """ Fetch JSON data from the NVD """
     API_KEY = config.API_KEY
     try:
-        url = 'http://services.nvd.nist.gov/rest/json/cve/1.0/' + cve_id + '?apiKey='+ API_KEY
+        url = 'https://services.nvd.nist.gov/rest/json/cve/1.0/' + cve_id + '?apiKey='+ API_KEY
         print(url)
         resp = requests.get(url)
     except requests.exceptions.RequestException as e:
