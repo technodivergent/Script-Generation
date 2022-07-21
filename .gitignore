@@ -1,0 +1,4 @@
+# ignore IDE files
+.vscode/*
+keys.py
+__pycache__/*
